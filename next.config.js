@@ -13,9 +13,6 @@ const nextConfig = {
   },
   presets: ["next/babel"],
   reactStrictMode: true,
-  sassOptions:{
-    includePaths:[path.join(__dirname,"styles")]
-  }
 }
 
 module.exports = withPlugins([], withPWA(nextConfig))
