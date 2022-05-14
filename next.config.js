@@ -11,7 +11,11 @@ const nextConfig = {
     dest: 'public',
     disable: isDev
   },
-  presets: ["next/babel"]
+  presets: ["next/babel"],
+  reactStrictMode: true,
+  sassOptions:{
+    includePaths:[path.join(__dirname,"styles")]
+  }
 }
 
 module.exports = withPlugins([], withPWA(nextConfig))
