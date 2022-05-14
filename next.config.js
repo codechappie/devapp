@@ -10,7 +10,8 @@ const nextConfig = {
   pwa: {
     dest: 'public',
     disable: isDev
-  }
+  },
+  presets: ["next/babel"]
 }
 
 module.exports = withPlugins([], withPWA(nextConfig))
