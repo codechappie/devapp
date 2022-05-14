@@ -1,6 +1,6 @@
 export const THEME = {
-  LIGHT: 'theme-light',
-  DARK: 'theme-dark'
+  LIGHT: 'light',
+  DARK: 'night'
 }
 
 export const PAGES = {

@@ -1,11 +1,11 @@
 module.exports = {
-  title: 'Next Template',
-  description: 'Next PWA Template',
-  siteUrl: 'https://github.com/ademilter/next-web-template',
+  title: 'DevApp',
+  description: 'DevApp is an Application with many dev tools',
+  siteUrl: 'https://devapp.com',
   googleAnalytic: 'X-XXXXXXXXXX',
   author: {
-    email: 'ademilter@gmail.com',
-    name: 'Adem ilter'
+    email: 'codechappie@gmail.com',
+    name: 'CodeChappie',
   },
-  lang: 'en'
+  lang: 'es'
 }

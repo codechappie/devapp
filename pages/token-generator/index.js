@@ -1,10 +1,8 @@
 import React, { useContext } from 'react'
 import Head from 'next/head'
-import StoreContext from '../store'
+import StoreContext from '../../store'
+import Layout from '../../components/layout'
 
-import Layout from '../components/layout'
-import { THEME } from '../constants'
-import Button from '../components/button'
 
 function HomePage() {
   const store = useContext(StoreContext)
@@ -12,7 +10,7 @@ function HomePage() {
   return (
     <Layout>
       <Head>
-        <title>Home Page</title>
+        <title>Token</title>
       </Head>
 
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 mt-4">
