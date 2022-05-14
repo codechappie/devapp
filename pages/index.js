@@ -20,7 +20,7 @@ function HomePage() {
           [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(card => (
             <div key={card} className="tool-card card w-auto bg-base-100 shadow-xl">
               <div className="card-body">
-                <div class="icon">
+                <div className="icon">
                   <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
                 </div>
                 <h2 className="card-title">

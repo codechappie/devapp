@@ -9,7 +9,7 @@ function Nav() {
   return (
     <div className="navbar sticky bg-slate-900 top-0 left-0 z-40 w-full transition-colors duration-900">
       <div className="flex-none">
-        <label for="my-drawer" className="btn bg-transparent border-none hover:bg-transparent normal-case text-xl">
+        <label htmlFor="my-drawer" className="btn bg-transparent border-none hover:bg-transparent normal-case text-xl">
           <RiMenu2Line />
         </label>
       </div>
@@ -17,7 +17,7 @@ function Nav() {
         <a className="btn bg-transparent  border-none hover:bg-transparent normal-case text-xl">DevApp</a>
       </div>
       <div className="flex-none gap-2">
-        <div className="form-control">
+        <div className="form-control hidden  md:flex">
           <input type="text" placeholder="Buscar" className="input input-bordered" />
         </div>
         <div className="dropdown dropdown-end">
@@ -34,14 +34,14 @@ function Nav() {
               </a>
             </li>
             <li>
-              <div class="form-control">
-                <label class="label cursor-pointer justify-between w-full" onClick={() =>
+              <div className="form-control">
+                <label className="label cursor-pointer justify-between w-full" onClick={() =>
                   store.changeTheme(
                     store.theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT
                   )
                 }>
-                  <span class="label-text">Tema</span>
-                  <input type="checkbox" class="toggle toggle-secondary" />
+                  <span className="label-text">Tema</span>
+                  <input type="checkbox" className="toggle toggle-secondary" />
                 </label>
               </div>
             </li>
