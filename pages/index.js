@@ -5,7 +5,7 @@ import StoreContext from '../store'
 import Layout from '../components/layout'
 import { THEME } from '../constants'
 import Button from '../components/button'
-
+import { RiExchangeFundsLine } from 'react-icons/ri'
 function HomePage() {
   const store = useContext(StoreContext)
 
@@ -21,7 +21,9 @@ function HomePage() {
             <div key={card} className="tool-card card w-auto bg-base-100 shadow-xl">
               <div className="card-body">
                 <div className="icon">
-                  <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+                  <figure>
+                    <RiExchangeFundsLine />
+                  </figure>
                 </div>
                 <h2 className="card-title">
                   Shoes!

@@ -1,10 +1,11 @@
 import React from 'react'
-
+import Link from 'next/link'
 import styles from './index.module.scss'
-
+import closeDrawer from '../../utils/index'
 import Nav from '../nav'
 
 function Layout({ children }) {
+
   return (
 
     <div className="drawer">
@@ -19,7 +20,15 @@ function Layout({ children }) {
 
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-          <li><a>Sidebar Item 1</a></li>
+          <li htmlFor="my-drawer">
+            <label htmlFor="my-drawer">
+              <Link href="/token-generator" >
+                <a htmlFor="my-drawer" onClick={() => closeDrawer("#my-drawer")}>
+                  Generador de token
+                </a>
+              </Link>
+            </label>
+          </li>
           <li><a>Sidebar Item 2</a></li>
 
         </ul>

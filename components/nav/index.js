@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import Link from 'next/link'
-
 import styles from './index.module.scss'
 import StoreContext from '../../store'
 import { RiMenu2Line } from 'react-icons/ri'
@@ -9,12 +8,17 @@ function Nav() {
   return (
     <div className="navbar sticky bg-slate-900 top-0 left-0 z-40 w-full transition-colors duration-900">
       <div className="flex-none">
-        <label htmlFor="my-drawer" className="btn bg-transparent border-none hover:bg-transparent normal-case text-xl">
+        <label htmlFor="my-drawer"
+          className="btn bg-transparent border-none hover:bg-transparent normal-case text-xl">
           <RiMenu2Line />
         </label>
       </div>
       <div className="flex-1">
-        <a className="btn bg-transparent  border-none hover:bg-transparent normal-case text-xl">DevApp</a>
+        <Link href="/" >
+          <a className="btn bg-transparent  border-none hover:bg-transparent normal-case text-xl">
+            DevApp
+          </a>
+        </Link>
       </div>
       <div className="flex-none gap-2">
         <div className="form-control hidden  md:flex">

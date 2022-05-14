@@ -37,7 +37,9 @@ function HomePage() {
 
   useEffect(() => {
     let txtarea = document.querySelector(".custom-textarea")
-    txtarea.style.height = (txtarea.scrollHeight) + 'px';
+    // txtarea.style.height = (txtarea.scrollHeight) + 'px';
+
+    txtarea.style.height = (txtarea.scrollHeight > txtarea.clientHeight) ? (txtarea.scrollHeight)+"px" : "60px";
     return () => { }
   }, [result])
 
