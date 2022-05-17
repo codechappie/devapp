@@ -1,5 +1,7 @@
 const withPlugins = require('next-compose-plugins')
 const withPWA = require('next-pwa')
+const removeImports = require("next-remove-imports")();
+
 
 const isDev = process.env.NODE_ENV !== 'production'
 
@@ -15,4 +17,8 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = withPlugins([], withPWA(nextConfig))
+module.exports =  withPlugins([], withPWA(nextConfig));
+
+// , removeImports({
+//   experimental: { esmExternals: "loose" }
+// })

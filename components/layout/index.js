@@ -20,20 +20,49 @@ function Layout({ children }) {
 
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-          <li htmlFor="my-drawer">
-            <label htmlFor="my-drawer">
-              <Link href="/token-generator" >
-                <a htmlFor="my-drawer" onClick={() => closeDrawer("#my-drawer")}>
-                  Generador de token
-                </a>
-              </Link>
+          <h1 className='text-2xl p-3'>DevApp</h1>
+          <div class="form-control w-full max-w-xs mb-2 pr-2 pl-2">
+            <label class="label">
+              <span class="label-text">¿Qué estas buscando?</span>
             </label>
-          </li>
-          <li><a>Sidebar Item 2</a></li>
+            <input type="text" placeholder="Busca una herramienta" class="input input-bordered w-full max-w-xs" />
+          </div>
+          <span class="label-text text-gray-500 mb-2 mt-2 ml-4">Criptografía</span>
+          <li htmlFor="my-drawer">
 
+            <Link href="/token-generator" >
+              <a htmlFor="my-drawer" onClick={() => closeDrawer("#my-drawer")}>
+                <label htmlFor="my-drawer">
+                  Generador de token
+                </label>
+              </a>
+            </Link>
+          </li>
+          <li htmlFor="my-drawer">
+            <Link href="/token-generator" >
+              <a htmlFor="my-drawer" onClick={() => closeDrawer("#my-drawer")}>
+                <label htmlFor="my-drawer">
+                  Otro item
+                </label>
+              </a>
+            </Link>
+
+          </li>
+          <span class="label-text text-gray-500 mb-2 mt-2 ml-4">Hojas de trucos</span>
+          <li>
+            <Link href="/html-to-jsx" onClick={() => closeDrawer("#my-drawer")}>
+
+              <a htmlFor="my-drawer" >
+                <label htmlFor="my-drawer">
+                  HTML a JSX
+                </label>
+              </a>
+
+            </Link>
+          </li>
         </ul>
       </div>
-    </div>
+    </div >
   )
 }
 
